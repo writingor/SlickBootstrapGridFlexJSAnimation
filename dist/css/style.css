@@ -134,6 +134,7 @@ a {
           justify-content: center;
   z-index: 3;
   bottom: 1vh;
+  padding: 0px;
 }
 
 .writingor-slick-slider .slick-dots li {
