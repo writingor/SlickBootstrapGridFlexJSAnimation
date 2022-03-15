@@ -11,8 +11,8 @@
 @font-face {
   font-family: Mukta;
   font-display: swap;
-  src: url("../fonts/Mukta-Light.woff2") format("woff2"), url("../fonts/Mukta-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/Mukta-ExtraLight.woff2") format("woff2"), url("../fonts/Mukta-ExtraLight.woff") format("woff");
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -44,7 +44,158 @@ a {
 
 /* COMMON STYLES */
 
+.btn-wave {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2d48e2;
+  width: 260px;
+  height: 60px;
+  border-radius: 0px 0px 7px 7px;
+  -webkit-transition: 700ms ease;
+  -o-transition: 700ms ease;
+  transition: 700ms ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-wave:hover {
+  -webkit-transition: 400ms ease 100ms;
+  -o-transition: 400ms ease 100ms;
+  transition: 400ms ease 100ms;
+  -webkit-box-shadow: 12px 14px 14px -10px #152585;
+          box-shadow: 12px 14px 14px -10px #152585;
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+  border-radius: 7px;
+}
+
+.btn-wave:hover .btn-wave__waves {
+  background-color: #2c67e7;
+  top: -60px;
+}
+
+.btn-wave:hover .btn-wave__text {
+  color: #ecf7ff;
+  font-weight: 200;
+}
+
+.btn-wave__text {
+  position: relative;
+  color: #8bb8f3;
+  letter-spacing: 7px;
+  font-size: 24px;
+  z-index: 1;
+  padding-top: 2px;
+  -webkit-transition: 500ms linear;
+  -o-transition: 500ms linear;
+  transition: 500ms linear;
+}
+
+.btn-wave__waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  background-color: #ecf7ff;
+  -webkit-transition: 500ms linear;
+  -o-transition: 500ms linear;
+  transition: 500ms linear;
+  -webkit-box-shadow: inset 0px 0px 37px #2c67e7;
+          box-shadow: inset 0px 0px 37px #2c67e7;
+}
+
+.btn-wave__waves:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 250%;
+  width: 250%;
+  -webkit-transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+          transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+  background-color: #2d48e2;
+  opacity: 1;
+  border-radius: 48%;
+  -webkit-animation: waves 7000ms infinite linear;
+          animation: waves 7000ms infinite linear;
+}
+
+.btn-wave__waves:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 250%;
+  width: 250%;
+  -webkit-transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+          transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+  background-color: #2d48e2;
+  opacity: 0.7;
+  border-radius: 44%;
+  -webkit-animation: waves 12000ms infinite linear;
+          animation: waves 12000ms infinite linear;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+            transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, -94%, 0) rotate(360deg) scale(1);
+            transform: translate3d(-50%, -94%, 0) rotate(360deg) scale(1);
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+            transform: translate3d(-50%, -94%, 0) rotate(0deg) scale(1);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-50%, -94%, 0) rotate(360deg) scale(1);
+            transform: translate3d(-50%, -94%, 0) rotate(360deg) scale(1);
+  }
+}
+
 /* HEADER STYLES */
+
+.header {
+  height: 100vh;
+  background-color: #2d48e2;
+}
+
+.header__menu {
+  height: 76px;
+  background-color: #ecf7ff;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
 
 /* FOOTER STYLES */
 
@@ -73,7 +224,7 @@ a {
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #2d48e2;
+  background-color: #465cdb;
 }
 
 .writingor-slick-slider__item {
