@@ -66,7 +66,7 @@ body {
   width: 100%;
   min-width: 320px;
   line-height: 1;
-  font-size: 24px;
+  font-size: 22px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -192,7 +192,7 @@ ul {
   position: relative;
   color: #ecf7ff;
   letter-spacing: 6px;
-  font-size: 24px;
+  font-size: 22px;
   z-index: 1;
   padding-top: 2px;
   -webkit-transition: 500ms linear;
@@ -227,8 +227,8 @@ ul {
   background-color: #2d48e2;
   opacity: 1;
   border-radius: 48%;
-  -webkit-animation: waves 7000ms infinite linear;
-          animation: waves 7000ms infinite linear;
+  -webkit-animation: waves 17000ms infinite cubic-bezier(0.5, -1, 0.5, 2);
+          animation: waves 17000ms infinite cubic-bezier(0.5, -1, 0.5, 2);
 }
 
 .btn-wave__waves:after {
@@ -569,6 +569,91 @@ ul {
 /* FOOTER STYLES */
 
 /* MODAL STYLES */
+
+/* MAIL FORM */
+
+.mail-form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d48e2;
+  width: 100%;
+  height: 100%;
+}
+
+.mail-form-box * {
+  color: #191c2c;
+}
+
+.mail-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf7ff;
+  border-radius: 7px;
+  max-width: 560px;
+  padding: 60px 30px 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 3;
+}
+
+.mail-form__title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.mail-form__subtitle {
+  font-size: 28px;
+  padding: 24px 0px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mail-form__item {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.mail-form__label {
+  padding: 10px 0px 12px;
+}
+
+.mail-form__input {
+  height: 52px;
+  border-radius: 7px;
+  width: 100%;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mail-form__textarea {
+  padding-top: 26px;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.mail-form__select {
+  padding: 5px 10px 4px;
+}
+
+.landing-options__input {
+  display: none;
+}
 
 /* IMPORT SLICK SLIDER */
 

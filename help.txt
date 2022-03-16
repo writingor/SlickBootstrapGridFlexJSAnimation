@@ -1,0 +1,10 @@
+1. Deploying a subfolder to GitHub Pages:
+https://gist.github.com/cobyism/4730490 
+
+2. 
+
+
+3. 
+
+
+4. 
