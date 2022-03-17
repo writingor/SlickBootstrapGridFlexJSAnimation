@@ -146,9 +146,7 @@ ul {
 body {
   overflow-x: hidden;
   width: 100vw;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5c92f5), to(#3876e9));
-  background-image: -o-linear-gradient(top, #5c92f5, #3876e9);
-  background-image: linear-gradient(to bottom, #5c92f5, #3876e9);
+  background-color: #497ddd;
 }
 
 /* SCROLLBAR START */
