@@ -1,6 +1,12 @@
 node_modules/
 gulp/
 source/
+dist/files/phpmailer/
+source/files/phpmailer/
+docs/files/phpmailer/
+dist/files/sendmail.php
+source/files/sendmail.php
+docs/files/sendmail.php
 package.json
 package-lock.json
 LandingBootstrap5.zip
