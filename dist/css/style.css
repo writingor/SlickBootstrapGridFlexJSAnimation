@@ -497,7 +497,7 @@ body {
 .about__sub-subtitle {
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
 }
 
 .about__text-box {
@@ -553,7 +553,7 @@ body {
 
 .contacts {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 72px);
   padding: 60px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -580,7 +580,78 @@ body {
 
 .contacts__title {
   font-size: 42px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+.contacts__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e8f1f8), to(#aed1fd));
+  background-image: -o-linear-gradient(top left, #e8f1f8, #aed1fd);
+  background-image: linear-gradient(to bottom right, #e8f1f8, #aed1fd);
+  margin-bottom: 10px;
+  border-radius: 7px;
+  padding-left: 4px;
+  -webkit-box-shadow: 3px 1px 6px #3876e9;
+          box-shadow: 3px 1px 6px #3876e9;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.contacts__item:hover {
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.contacts__item object {
+  margin-right: 8px;
+}
+
+.contacts__item p {
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  color: #3876e9;
+}
+
+.contacts__cube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 300px;
 }
 
 /* CUBE */
@@ -635,8 +706,9 @@ body {
 }
 
 .side a {
+  color: #ffffff;
   padding: 30%;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 30vh;
   cursor: pointer;
 }
@@ -1109,8 +1181,8 @@ body {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 0;
-  min-width: 24px;
-  min-height: 49px;
+  min-width: 20px;
+  min-height: 44px;
   border: none;
   opacity: 0.7;
 }

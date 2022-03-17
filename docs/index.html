@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/libs/bootstrap-5-1-3.css?_v=20220317210936">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220317210936">
+    <link rel="stylesheet" href="css/libs/bootstrap-5-1-3.css?_v=20220317233250">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220317233250">
 
     <title>WRITINGOR</title>
 </head>
@@ -28,7 +28,7 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li>
-                            <a href="#" class="header__link">Main</a>
+                            <a onClick="reloadPage" id="main-logo" href="#" class="header__link">Main</a>
                             <a href="#about" class="header__link">About</a>
                             <a href="#portfolio" class="header__link">Portfolio</a>
                             <a href="#contacts" class="header__link">Contacts</a>
@@ -46,7 +46,7 @@
     <div class="container">
 
         <div class="main-screen__body">
-            <a class="btn-wave text-uppercase">
+            <a href="#contacts" class="btn-wave text-uppercase">
     <span class="btn-wave__text">Get landing!</span>
     <span class="btn-wave__waves"></span>
 </a>
@@ -112,29 +112,23 @@
 
     <section class="portfolio" id="portfolio">
 
-  <h2 class="portfolio__title text-uppercase text-center">Cats</h2>
+  <h2 class="portfolio__title text-uppercase text-center">Portfolio</h2>
   
   <div class="writingor-slick-slider">
     <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-1.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-1.jpg" alt="free cat photo from pixabay"></picture>
+        <picture><source srcset="img/portfolio/img-0.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/portfolio/img-0.png" alt="free cat photo from pixabay"></picture>
     </div>
     <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-2.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-2.jpg" alt="free cat photo from pixabay"></picture>
+        <picture><source srcset="img/portfolio/img-1.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/portfolio/img-1.jpg" alt="free cat photo from pixabay"></picture>
     </div>
     <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-3.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-3.jpg" alt="free cat photo from pixabay"></picture>
+        <picture><source srcset="img/portfolio/img-2.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/portfolio/img-2.jpg" alt="free cat photo from pixabay"></picture>
     </div>
     <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-4.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-4.jpg" alt="free cat photo from pixabay"></picture>
+        <picture><source srcset="img/portfolio/img-3.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/portfolio/img-3.jpg" alt="free cat photo from pixabay"></picture>
     </div>
     <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-5.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-5.jpg" alt="free cat photo from pixabay"></picture>
-    </div>
-    <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-6.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-6.jpg" alt="free cat photo from pixabay"></picture>
-    </div>
-    <div class="writingor-slick-slider__item">
-        <picture><source srcset="img/slick-slider/img-7.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-7.jpg" alt="free cat photo from pixabay"></picture>
+        <picture><source srcset="img/portfolio/img-4.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/portfolio/img-4.png" alt="free cat photo from pixabay"></picture>
     </div>
 </div>
 
@@ -145,19 +139,70 @@
         <div class="contacts__body">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contacts__title text-uppercase text-center">Contacts</h2>
+                    <h2 class="contacts__title text-uppercase text-center">You can find me here</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
+            <div class="row w-100">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="contacts__box">
+                    
+                        <a id="toGitHub" target="_blank" href="https://github.com/writingor" class="contacts__item">
+                            <object type="image/svg+xml" data="svg/github.svg" width="66px" height="66px">
+                                <picture><source srcset="img/github.webp" type="image/webp"><img src="img/github.png" width="66px" height="66px" alt="github logo png" /></picture>
+                            </object>
+                            <p>/writingor</p>
+                        </a>
+
+                        <a id="toLinkedIn" target="_blank" href="https://www.linkedin.com/in/writingor/" class="contacts__item">
+                            <object type="image/svg+xml" data="svg/linkedin.svg" width="66px" height="66px">
+                                <picture><source srcset="img/linkedin.webp" type="image/webp"><img src="img/linkedin.png" width="66px" height="66px" alt="linkedin logo png" /></picture>
+                            </object>
+                            <p>/in/writingor</p>
+                        </a>
+
+                        <a id="toFacebook" target="_blank" href="https://www.facebook.com/writingor" class="contacts__item">
+                            <object type="image/svg+xml" data="svg/facebook.svg" width="66px" height="66px">
+                                <picture><source srcset="img/facebook.webp" type="image/webp"><img src="img/facebook.png" width="66px" height="66px" alt="facebook logo png" /></picture>
+                            </object>
+                            <p>/writingor</p>
+                        </a>
+
+                        <a id="toTelegram" target="_blank" href="https://t.me/writingor" class="contacts__item">
+                            <object type="image/svg+xml" data="img/telegram.svg" width="66px" height="66px">
+                                <picture><source srcset="@img" type="image/webp"><img src="@img" width="66px" height="66px" alt="linkedin logo png" /></picture>
+                            </object>
+                            <p>/writingor</p>
+                        </a>
+
+                        <a id="toFreelancer" target="_blank" href="https://www.freelancer.com/u/writingor" class="contacts__item">
+                            <object type="image/svg+xml" data="img/freelancer.svg" width="66px" height="66px">
+                                <picture><source srcset="@img" type="image/webp"><img src="@img" width="66px" height="66px" alt="facebook logo png" /></picture>
+                            </object>
+                            <p>/u/writingor</p>
+                        </a>
+
+                        <a id="toWritingor" target="_blank" href="https://writingor.net" class="contacts__item">
+                            <object type="image/svg+xml" data="img/writingor.svg" width="66px" height="66px">
+                                <picture><source srcset="img/writingor.webp" type="image/webp"><img src="img/writingor.png" width="66px" height="66px" alt="facebook logo png" /></picture>
+                            </object>
+                            <p>/writingor.net</p>
+                        </a>    
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 col-md-12 contacts__cube">
                     <div class="cube-container">
     <div class="cube-container__cube cube">
-        <div class="side front"><a target="_blank" href="https://google.com" rel="noopener noreferrer">Google</a></div>
-        <div class="side back"><a target="_blank" href="https://www.facebook.com/writingor" rel="noopener noreferrer">Facebook</a></div>
-        <div class="side right"><a href="https://github.com/writingor" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-        <div class="side left"><a href="https://www.linkedin.com/in/writingor/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-        <div class="side top"><a href="https://writingor.net/" target="_blank" rel="noopener noreferrer">Writingor</a></div>
-        <div class="side bottom"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+        <div class="side front"><a target="_blank" href="https://github.com/writingor" rel="noopener noreferrer">GitHub</a></div>
+        <div class="side back"><a target="_blank" href="https://www.linkedin.com/in/writingor/" rel="noopener noreferrer">LinkedIn</a></div>
+        <div class="side right"><a href="https://www.facebook.com/writingor" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+        <div class="side left"><a href="https://t.me/writingor" target="_blank" rel="noopener noreferrer">Telegram</a></div>
+        <div class="side top"><a href="https://www.freelancer.com/u/writingor" target="_blank" rel="noopener noreferrer">Freelancer</a></div>
+        <div class="side bottom"><a href="https://writingor.net" target="_blank" rel="noopener noreferrer">Writingor</a></div>
     </div>
 </div>
                 </div>
@@ -174,11 +219,11 @@
 
 </footer>
 
-<script src="js/libs/jquery-3-6-0.js?_v=20220317210936"></script>
-<script src="js/libs/jquery-parallax.js?_v=20220317210936"></script>
-<script src="js/libs/slick.js?_v=20220317210936"></script>
-<script src="js/libs/bootstrap-5-1-3-bundle.js?_v=20220317210936"></script>
-<script src="js/app.min.js?_v=20220317210936"></script>
+<script src="js/libs/jquery-3-6-0.js?_v=20220317233250"></script>
+<script src="js/libs/jquery-parallax.js?_v=20220317233250"></script>
+<script src="js/libs/slick.js?_v=20220317233250"></script>
+<script src="js/libs/bootstrap-5-1-3-bundle.js?_v=20220317233250"></script>
+<script src="js/app.min.js?_v=20220317233250"></script>
 
     <!-- modal here -->
 
