@@ -141,6 +141,37 @@ ul {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* SCROLLBAR START */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2d48e2;
+  -webkit-box-shadow: inset 0px 0px 6px #191c2c;
+          box-shadow: inset 0px 0px 6px #191c2c;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  background-color: #488fec;
+  border-radius: 7px;
+  border: 2px solid #2d48e2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aa77ec;
+}
+
+/* SCROLLBAR END */
+
 /* COMMON STYLES */
 
 .btn-wave {
@@ -455,6 +486,17 @@ ul {
   height: 100%;
 }
 
+/* ABOUT */
+
+.portfolio {
+  padding: 60px 0px 30px;
+  background-color: #191c2c;
+}
+
+.portfolio__title {
+  font-size: 42px;
+}
+
 /* CONTACTS */
 
 .contacts {
@@ -582,12 +624,11 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #2d48e2;
   width: 100%;
-  height: 100%;
 }
 
 .mail-form-box * {
@@ -596,7 +637,9 @@ ul {
 
 .mail-form-box__mail-form {
   position: relative;
-  overflow: hidden;
+  height: calc(100vh - 72px);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .mail-form-box__mail-form::after {
@@ -790,10 +833,6 @@ ul {
           transform: scale(1);
 }
 
-.landing-options__input:checked + .landing-options__label::before {
-  background-color: #2974e4;
-}
-
 .landing-options__input {
   display: none;
 }
@@ -831,10 +870,8 @@ ul {
   left: 4px;
   width: 16px;
   height: 16px;
-  background-color: #ffffff;
+  background-color: #9e5ff0;
   border-radius: 50%;
-  -webkit-animation: flashBg 2700ms infinite linear;
-          animation: flashBg 2700ms infinite linear;
   -webkit-transition: -webkit-transform 200ms;
   transition: -webkit-transform 200ms;
   -o-transition: transform 200ms;
@@ -843,34 +880,6 @@ ul {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-}
-
-@-webkit-keyframes flashBg {
-  0% {
-    background-color: #a4c9fa;
-  }
-
-  50% {
-    background-color: #b7c2f3;
-  }
-
-  100% {
-    background-color: #a4c9fa;
-  }
-}
-
-@keyframes flashBg {
-  0% {
-    background-color: #a4c9fa;
-  }
-
-  50% {
-    background-color: #b7c2f3;
-  }
-
-  100% {
-    background-color: #a4c9fa;
-  }
 }
 
 .add-file {
@@ -978,9 +987,7 @@ ul {
   width: 16px;
   height: 16px;
   border-radius: 4px;
-  background-color: #e8f1f8;
-  -webkit-animation: flashBg 2700ms infinite linear;
-          animation: flashBg 2700ms infinite linear;
+  background-color: #9e5ff0;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -995,10 +1002,6 @@ ul {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-}
-
-.checkbox__input:checked + .checkbox__label::before {
-  background-color: #2974e4;
 }
 
 /* IMPORT SLICK SLIDER */
@@ -1020,22 +1023,23 @@ ul {
       flex-wrap: wrap;
   position: relative;
   min-width: 0;
-  padding: 0px 0px;
-  height: 100vh;
+  padding: 34px 0px 64px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #191c2c;
 }
 
 .writingor-slick-slider__item {
-  padding: 0;
-  text-align: center;
-  height: 100vh;
-  overflow: hidden;
+  margin-right: 20px;
 }
 
 .writingor-slick-slider__item img {
-  height: 100%;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
 }
 
 .writingor-slick-slider .slick-arrow {
@@ -1085,13 +1089,13 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 3;
-  bottom: 2vh;
+  bottom: 0px;
   padding: 0px;
 }
 
 .writingor-slick-slider .slick-dots li {
   list-style: none;
-  padding: 10px;
+  padding: 15px;
 }
 
 .writingor-slick-slider .slick-dots li:hover {
@@ -1100,9 +1104,9 @@ ul {
 
 .writingor-slick-slider .slick-dots li button {
   font-size: 0;
-  height: 2px;
-  width: 30px;
-  border-radius: 0;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
   background-color: #ffffff;
   border: none;
   opacity: 0.7;

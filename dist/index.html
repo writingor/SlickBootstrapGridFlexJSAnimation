@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/libs/bootstrap-5-1-3.css?_v=20220316204550">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220316204550">
+    <link rel="stylesheet" href="css/libs/bootstrap-5-1-3.css?_v=20220317114943">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220317114943">
 
     <title>WRITINGOR</title>
 </head>
@@ -58,33 +58,120 @@
     <div class="about">
     <div class="container">
         <div class="about__body">
+            <div class="mail-form-box">
+    <form action="#" class="mail-form mail-form-box__mail-form" id="mail-form">
+        
+        <h2 class="mail-form__title">GET LANDING</h2>
+
+        <div class="mail-form__item">
+            <label for="formName" class="mail-form__label">Your name*:</label>
+            <input id="formName" type="text" name="customerName" class="mail-form__input _req">
+        </div>
+
+        <div class="mail-form__item">
+            <label for="formEmail" class="mail-form__label">E-mail*:</label>
+            <input id="formEmail" type="text" name="customerEmail" class="mail-form__input _req _email">
+        </div>
+
+        <div class="mail-form__item">
+            <div class="mail-form__subtitle">Choose landing option:</div>
+            <div class="mail-form__landing-options landing-options">
+                
+                <div class="landing-options__item">
+                    <input checked id="formStandartLanding" type="radio" name="landingOption" value="standart" class="landing-options__input">
+                    <label for="formStandartLanding" class="landing-options__label"><span>Standart</span></label>
+                </div>
+
+                <div class="landing-options__item">
+                    <input id="formPremiumLanding" type="radio" name="landingOption" value="premium" class="landing-options__input _req">
+                    <label for="formPremiumLanding" class="landing-options__label"><span>Premium</span></label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mail-form__item">
+            <label for="formMessage" class="mail-form__label">Message:</label>
+            <textarea name="mailFormMessage" id="formMessage" class="mail-form__input mail-form__textarea"></textarea>
+        </div>
+
+        <div class="mail-form__item">
             
+            <div class="mail-form__subtitle">Select deadline:</div>
+            <select name="deadline" id="" class="mail-form__select">
+                <option value="inThreeDays">in 3 days</option>
+                <option value="inOneWeek">in 1 week</option>
+                <option value="inTwoWeeks">in 2 weeks</option>
+                <option value="inOneMonth">in 1 month</option>
+            </select>
+
+        </div>
+
+        <div class="mail-form__item">
+            
+            <div class="mail-form__subtitle">Attach one image:</div>
+            <div class="mail-form__add-file add-file">
+                <div class="add-file__item">
+                    <input accept=".jpg, .jpeg, .png" type="file" id="formImage" name="image" class="add-file__input">
+                    <div class="add-file__btn">Add file</div>
+                </div>
+            </div>
+
+            <div id="formPreview" class="add-file__preview"></div>
+
+        </div>
+
+        <div class="mail-form__item">
+            <div class="mail-form__checkbox checkbox">
+                <input type="checkbox" name="agreement" class="_req checkbox__input" id="mailFormAgreement">
+                <label for="mailFormAgreement" class="checkbox__label">
+                    I agree to the processing of personal data.
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="mail-form__btn">Send</button>
+
+    </form>
+</div>
         </div>
     </div>
 </div>
 
 
 
-    <div class="writingor-slick-slider">
-    <div class="container writingor-slick-slider__item">
+    <section class="portfolio" id="portfolio">
+
+  <h2 class="portfolio__title text-uppercase text-center">Cats</h2>
+  
+  <div class="writingor-slick-slider">
+    <div class="writingor-slick-slider__item">
         <picture><source srcset="img/slick-slider/img-1.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-1.jpg" alt="free cat photo from pixabay"></picture>
     </div>
-    <div class="container writingor-slick-slider__item">
+    <div class="writingor-slick-slider__item">
         <picture><source srcset="img/slick-slider/img-2.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-2.jpg" alt="free cat photo from pixabay"></picture>
     </div>
-    <div class="container writingor-slick-slider__item">
+    <div class="writingor-slick-slider__item">
         <picture><source srcset="img/slick-slider/img-3.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-3.jpg" alt="free cat photo from pixabay"></picture>
     </div>
-    <div class="container writingor-slick-slider__item">
+    <div class="writingor-slick-slider__item">
         <picture><source srcset="img/slick-slider/img-4.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-4.jpg" alt="free cat photo from pixabay"></picture>
     </div>
-    <div class="container writingor-slick-slider__item">
+    <div class="writingor-slick-slider__item">
         <picture><source srcset="img/slick-slider/img-5.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-5.jpg" alt="free cat photo from pixabay"></picture>
     </div>
-    <div class="container writingor-slick-slider__item">
+    <div class="writingor-slick-slider__item">
         <picture><source srcset="img/slick-slider/img-6.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-6.jpg" alt="free cat photo from pixabay"></picture>
     </div>
+    <div class="writingor-slick-slider__item">
+        <picture><source srcset="img/slick-slider/img-7.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-7.jpg" alt="free cat photo from pixabay"></picture>
+    </div>
+    <div class="writingor-slick-slider__item">
+        <picture><source srcset="img/slick-slider/img-8.webp" type="image/webp"><img class="lazy" data-mdb-lazy-src="img/slick-slider/img-8.jpg" alt="free cat photo from pixabay"></picture>
+    </div>
 </div>
+
+</section>
 
     <div class="contacts">
     <div class="container">
@@ -111,11 +198,11 @@
 
 </footer>
 
-<script src="js/libs/jquery-3-6-0.js?_v=20220316204550"></script>
-<script src="js/libs/jquery-parallax.js?_v=20220316204550"></script>
-<script src="js/libs/slick.js?_v=20220316204550"></script>
-<script src="js/libs/bootstrap-5-1-3-bundle.js?_v=20220316204550"></script>
-<script src="js/app.min.js?_v=20220316204550"></script>
+<script src="js/libs/jquery-3-6-0.js?_v=20220317114943"></script>
+<script src="js/libs/jquery-parallax.js?_v=20220317114943"></script>
+<script src="js/libs/slick.js?_v=20220317114943"></script>
+<script src="js/libs/bootstrap-5-1-3-bundle.js?_v=20220317114943"></script>
+<script src="js/app.min.js?_v=20220317114943"></script>
 
     <!-- modal here -->
 
