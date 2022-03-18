@@ -631,6 +631,10 @@ body {
           transform: scale(1.03);
 }
 
+.contacts__item object {
+  pointer-events: none;
+}
+
 /* CUBE */
 
 /*CUBE*/
