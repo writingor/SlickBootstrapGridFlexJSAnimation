@@ -124,6 +124,10 @@ h6 {
 
 /* COMMON STYLES */
 
+.modal-body {
+  padding: 0px;
+}
+
 *,
 a {
   -o-text-overflow: ellipsis;
@@ -147,19 +151,18 @@ body {
 /* SCROLLBAR START */
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #e8f1f8;
+  background-color: #20232e;
 }
 
 ::-webkit-scrollbar-thumb {
   -webkit-transition: all 200ms;
   transition: all 200ms;
-  background-color: #5c92f5;
-  border-radius: 7px;
-  border: 2px solid #e8f1f8;
+  background-color: #3876e9;
+  border: 2px solid #20232e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
