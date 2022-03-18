@@ -128,14 +128,9 @@ h6 {
 a {
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  color: #e8f1f8;
+  color: #20232e;
   font-weight: 200;
   letter-spacing: 3px;
-}
-
-*:hover,
-a:hover {
-  color: #e8f1f8;
 }
 
 ul {
